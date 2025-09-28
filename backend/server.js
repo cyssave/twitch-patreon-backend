@@ -100,7 +100,7 @@ app.get("/api/twitch/users", async (req, res) => {
 
 // ---------- Patreon OAuth (issues a premium JWT) ----------
 
-app.use(bodyParser.json());
+app.use(express.json());
 
 const CLIENT_ID = process.env.CLIENT_ID;
 const CLIENT_SECRET = process.env.CLIENT_SECRET;
